@@ -3,11 +3,14 @@ Repository for the ConservNet architecture.
 
 <img src="/ConservNet.png" width="400" height="600">
 
-# Requirements
+## Abstract
+Invariants and conservation laws convey critical information about the underlying dynamics, yet it is generally infeasible to find those without any prior knowledge. We propose ConservNet to achieve this goal, a neural network to extract a conserved quantity from a grouped data where the members of each group share their own invariant. By constructing neural networks with a novel and intuitive loss function called noise-variance loss, ConservNet learns hidden invariants in each group of multi-dimensional observables in a data-driven, end-to-end manner. We demonstrate the capability of our model with five simulated systems with invariants and a real-world double pendulum trajectory. ConservNet successfully discovers underlying invariants from the systems from a small number of data less than several thousand. Since the model is robust to noise and data conditions compared to baseline, our approach is directly applicable to experimental data for discovering hidden conservation law and relationships between variables. 
+
+## Requirements
 - Python 3.6+
 - Pytorch 1.0+ (written for 1.6)
 
-# Run experiments
+## Run experiments
 To replicate the experiments by running
 ```
 python ConservNet.py --system $1 --spreader $2 --iter $3 --epochs $4 --n $5 --m $6 --Q $7 --constant $8 --noise $9 --indicator ${10:-""} 
@@ -21,7 +24,7 @@ python Siam.py --system $1 --iter $3 --epochs $4 --n $5 --m $6 --noise $7 --indi
 
 ```
 
-## Argument descriptions
+### Argument descriptions
 - system : Type of system. 'S1', 'S2', 'S3', 'P1', 'P2', 'P3'
 - iter : iteration number. Perform same experiment multiple times (default: 1)
 - spreader : Type of spreader. 'L1', 'L2', 'L8' (default : L2)
