@@ -29,6 +29,6 @@ python ConservNet.py --system $1 --spreader $2 --iter $3 --epochs $4 --n $5 --m 
 - P1 : Simulated Lotka-Volterra equations with a prey and a pradator.
 - P2 : Simulated Kepler problem with two bodies.
 - P3 : Real double pendulum data from [M. Schmidt and H. Lipson, science 324, 81 (2009)](https://science.sciencemag.org/content/324/5923/81).
- - If you set the system as P3, batch_number and batch_size will be 
+  - If you set the system as P3, batch_number and batch_size will be fixed to 1 and 818, ignoring arguments n and m.
 - The code automatically generates dataset if it isn't already exist at the 'data' folder.
 - The trained model will be saved at 'result' folder.
