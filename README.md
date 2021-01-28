@@ -1,6 +1,7 @@
 # ConservNet
 Repository for the ConservNet architecture.
-<img src="/ConservNet.png" width="300" height="300">
+
+<img src="/ConservNet.png" width="400" height="600">
 
 # Requirements
 - Python 3.6+
