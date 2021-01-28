@@ -13,8 +13,17 @@ To replicate the experiments by running
 python ConservNet.py --system $1 --spreader $2 --iter $3 --epochs $4 --n $5 --m $6 --Q $7 --constant $8 --noise $9 --indicator ${10:-""} 
 
 ```
+Similarly, we have implemented Siamese Neural Network from  [S.  J.  Wetzel,  R.  G.  Melko,  J.  Scott,  M.  Panju,    and
+6V. Ganesh, Physical Review Research2, 033499 (2020)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033499).
+
+```
+python Siam.py --system $1 --iter $3 --epochs $4 --n $5 --m $6 --noise $7 --indicator ${8:-""} 
+
+```
+
 ## Argument descriptions
 - system : Type of system. 'S1', 'S2', 'S3', 'P1', 'P2', 'P3'
+- iter : iteration number. Perform same experiment multiple times (default: 1)
 - spreader : Type of spreader. 'L1', 'L2', 'L8' (default : L2)
 - epochs : total number of training epochs (default: 10000) 
 - n : batch number (default: 20)
