@@ -2,7 +2,8 @@
 This repository contains the official PyTorch implementation of **ConservNet** from:
 
 **Discovering conserved quantities from grouped data by neural network**
-<img src="/ConservNet.png" width="400" height="600">
+
+<img src="/ConservNet.png" width="300" height="450">
 Seungwoong Ha and Hawoong Jeong.
 
 **Abstract** : Invariants and conservation laws convey critical information about the underlying dynamics, yet it is generally infeasible to find those without any prior knowledge. We propose ConservNet to achieve this goal, a neural network to extract a conserved quantity from a grouped data where the members of each group share their own invariant. By constructing neural networks with a novel and intuitive loss function called noise-variance loss, ConservNet learns hidden invariants in each group of multi-dimensional observables in a data-driven, end-to-end manner. We demonstrate the capability of our model with five simulated systems with invariants and a real-world double pendulum trajectory. ConservNet successfully discovers underlying invariants from the systems from a small number of data less than several thousand. Since the model is robust to noise and data conditions compared to baseline, our approach is directly applicable to experimental data for discovering hidden conservation law and relationships between variables. 
