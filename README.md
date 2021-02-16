@@ -1,7 +1,7 @@
 # ConservNet
 This repository contains the official PyTorch implementation of **ConservNet** from:
 
-**Discovering conserved quantities from grouped data by neural network** 
+**Discovering conserved quantities from grouped data by neural network** (https://arxiv.org/abs/2102.04008) 
 by Seungwoong Ha and Hawoong Jeong.
 
 <img src="/ConservNet.png" width="300" height="450">
