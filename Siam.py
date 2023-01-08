@@ -36,11 +36,8 @@ import distutils
 import distutils.util
 
 import sys
-import src.DataStructure as DS
-import src.MachineLearning as ML
 from src.utils import *
 from src.system import *
-from src.MachineLearning import DCN, CN, TTC, ns, plot_now, imshow_now, scatter_now
 
 def str2bool(v):
     return bool(distutils.util.strtobool(v))
