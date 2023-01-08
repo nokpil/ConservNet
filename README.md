@@ -38,7 +38,7 @@ The code automatically generates dataset if it isn't already exist at the 'data'
 - n : batch number (default: 20)
 - m : batch size (default: 200)
 - Q : spreading constant (default: 1.0)
-- R : max norm of injected noise (default: 1.0)
+- constant : max norm of injected noise, R (default: 1.0)
 - noise : scale of added noise (default : 0.0)
 - indicator : string which will be concatenated to the name of the saved model. (default: '')
 
